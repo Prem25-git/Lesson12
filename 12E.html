@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <button class="js-button" onclick="
+        displayMessage();">Add to Cart</button>
+
+        <p class="js-message"></p>
+      <script>
+        function displayMessage(){
+          const button = document.querySelector('.js-message');
+          button.innerHTML = 'Added';
+
+          setTimeout(function(){
+            button.innerHTML = '';
+          },2000);
+        }
+        
+      </script>
+    </body>
+  </head>
+</html>
